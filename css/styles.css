@@ -2216,7 +2216,7 @@ progress {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid rgba(43, 94, 165, 1);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2237,7 +2237,7 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #ffe480;
+  border-color: rgba(43, 94, 165, 1);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
@@ -3067,13 +3067,13 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-color: rgba(43, 94, 165, 1);
+  border-color: rgba(43, 94, 165, 1);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #d9aa00;
-  border-color: #cca000;
+  background-color: rgba(31, 70, 128, 1);
+  border-color: rgb(31, 70, 126);
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
@@ -11661,13 +11661,12 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-color: rgb(230, 230, 230);
   background-repeat: no-repeat;
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: rgba(43, 94, 165, 1);
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
