@@ -18,6 +18,7 @@
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
   <link href="css/empresas.css" rel="stylesheet" />
+  <link href="css/contacto.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -53,7 +54,95 @@
       </div>
     </div>
   </nav>
-
+  <!-- Header -->
+  <header class="masthead-general">
+  </header>
+  <!-- Contact-->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Contáctanos</h2>
+        <h3 class="section-subheading text-muted">
+        </h3>
+      </div>
+      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="row align-items-stretch mb-5">
+          <div class="col-md-6">
+            <div class="form-group">
+              <!-- Name input-->
+              <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required" />
+              <div class="invalid-feedback" data-sb-feedback="name:required">
+                Nombre requerido.
+              </div>
+            </div>
+            <div class="form-group">
+              <!-- Email address input-->
+              <input class="form-control" id="email" type="email" placeholder="Correo electrónico *"
+                data-sb-validations="required,email" />
+              <div class="invalid-feedback" data-sb-feedback="email:required">
+                Correo requerido.
+              </div>
+              <div class="invalid-feedback" data-sb-feedback="email:email">
+                Correo no válido.
+              </div>
+            </div>
+            <div class="form-group mb-md-0">
+              <!-- Phone number input-->
+              <input class="form-control" id="phone" type="tel" placeholder="Teléfono *"
+                data-sb-validations="required" />
+              <div class="invalid-feedback" data-sb-feedback="phone:required">
+                Teléfono requerido.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group form-group-textarea mb-md-0">
+              <!-- Message input-->
+              <textarea class="form-control" id="message" placeholder="Mensaje *"
+                data-sb-validations="required"></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">
+                Mensaje requerido.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Submit success message-->
+        <!---->
+        <!-- This is what your users will see when the form-->
+        <!-- has successfully submitted-->
+        <div class="d-none" id="submitSuccessMessage">
+          <div class="text-center text-white mb-3">
+            <div class="fw-bolder">Form submission successful!</div>
+            To activate this form, sign up at
+            <br />
+            <a
+              href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+          </div>
+        </div>
+        <!-- Submit error message-->
+        <!---->
+        <!-- This is what your users will see when there is-->
+        <!-- an error submitting the form-->
+        <div class="d-none" id="submitErrorMessage">
+          <div class="text-center text-danger mb-3">
+            Error sending message!
+          </div>
+        </div>
+        <!-- Submit Button-->
+        <div class="text-center">
+          <button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Maps -->
+  <div class="" id="maps">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d947.5370791581508!2d-98.34150007103389!3d19.085259100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc9635b42fa5d%3A0xe3e506b721692fed!2sDOMINIO%20EN%20INGENIERIA%20SA%20DE%20CV!5e1!3m2!1ses-419!2smx!4v1652842111033!5m2!1ses-419!2smx"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
   <!-- Footer-->
   <footer class="footer py-4">
     <div class="container">
@@ -78,7 +167,6 @@
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
